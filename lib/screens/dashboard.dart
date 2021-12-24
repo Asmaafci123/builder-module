@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:dashboard/size.dart';
 import 'package:dashboard/style/colors.dart';
 import 'package:dashboard/widgets/custom_card.dart';

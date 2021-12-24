@@ -5,6 +5,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../size.dart';
+import 'custom_positioned_circle.dart';
 
 Widget buildCustomCard(
     BuildContext context,
@@ -51,27 +52,8 @@ Widget buildCustomCard(
           ],
         ),
       ),
-      Positioned(
-        top: 0,
-        right: 0,
-        child: Image(
-          image: AssetImage('assets/images/circle1.png'),
-        ),
-      ),
-      Positioned(
-        top: 0,
-        right: 0,
-        child: Image(
-          image: AssetImage('assets/images/circle1.png'),
-        ),
-      ),
-      Positioned(
-        top: 0,
-        right: 0,
-        child: Image(
-          image: AssetImage('assets/images/circle2.png'),
-        ),
-      ),
+      buildCustomPositioned('assets/images/circle1.png'),
+      buildCustomPositioned('assets/images/circle2.png'),
     ],
   );
 }
